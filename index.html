@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relógio Digital</title>
+    <link rel="stylesheet" href="hora2 copy.css">
+</head>
+<body>
+
+    <div class="poeira" aria-hidden="true"></div>
+
+    <h1>Horário Atual</h1>
+
+    <!-- o relógio é montado pelo hora.js: 6 tambores 3D que rolam -->
+    <div class="palco">
+        <div class="flutua">
+            <div class="inclina" id="aparelho">
+                <div class="corpo" aria-hidden="true"></div>
+                <div id="relogio" role="timer"></div>
+                <div class="chao" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <p id="data"></p>
+
+    <section class="cartao">
+        <h2>Verificação de Idade</h2>
+        <label>Digite sua idade:</label>
+        <input type="number" id="idade">
+        <button id="verificar">Verificar Acesso</button>
+        <p id="resultado"></p>
+    </section>
+
+    <button id="tema">🌙 Modo Escuro</button>
+    <button id="som">🔇 Som</button>
+
+    <script src="hora2 copy.js"></script>
+</body>
+</html>
